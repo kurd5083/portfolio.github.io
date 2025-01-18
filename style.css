@@ -1,0 +1,801 @@
+@font-face {
+    font-family: 'Aeroport';
+    src: url('./fonts/Aeroport-Medium.eot');
+    src: local('Aeroport Medium'), local('Aeroport-Medium'),
+        url('./fonts/Aeroport-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Aeroport-Medium.woff2') format('woff2'),
+        url('./fonts/Aeroport-Medium.woff') format('woff'),
+        url('./fonts/Aeroport-Medium.ttf') format('truetype');
+    font-weight: 500;
+} @font-face {
+    font-family: 'Aeroport';
+    src: url('./fonts/Aeroport.eot');
+    src: local('Aeroport'),
+        url('./fonts/Aeroport.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Aeroport.woff2') format('woff2'),
+        url('./fonts/Aeroport.woff') format('woff'),
+        url('./fonts/Aeroport.ttf') format('truetype');
+    font-weight: 400;
+} @font-face {
+    font-family: 'Aeroport';
+    src: url('./fonts/Aeroport-Bold.eot');
+    src: local('Aeroport Bold'), local('Aeroport-Bold'),
+        url('./fonts/Aeroport-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Aeroport-Bold.woff2') format('woff2'),
+        url('./fonts/Aeroport-Bold.woff') format('woff'),
+        url('./fonts/Aeroport-Bold.ttf') format('truetype');
+    font-weight: 700;
+} body {
+    background-color: #292F36;
+    font-family: 'Aeroport';
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #fff;
+} ul {
+    margin: 0;
+    padding: 0;
+} a {
+    text-decoration: none;
+    color: inherit;
+} input, select, textarea {
+    border: none;
+    outline: none;
+    font-family: 'Aeroport';
+} h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 500;
+} h1 {
+    font-size: 22px;
+    line-height: 30px;
+} h2 {
+    font-size: 56px;
+    line-height: 64px;
+} h4 {
+    font-size: 32px;
+    line-height: 42px;
+} button {
+    font-family: 'Aeroport';
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+ /* .btn {
+    padding: 12px 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    background-color: #00124B;
+    color: #fff;
+    width: 100%;
+}  */
+p {
+    display: inline-block;
+    margin: 0;
+} header {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding: 0 128px;
+} .headerContant {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0;
+    border-bottom: 1px solid #43454D;
+} header h3 {
+    font-size: 28px;
+    line-height: 36px;
+} .headerRight {
+    display: flex;
+    align-items: center;
+} .headerMenu {
+    display: flex;
+    align-items: center;
+} .headerMenu a {
+    margin-right: 32px;
+    font-size: 20px;
+    line-height: 28px;
+} .headerMenuActive {
+    color: #12F7D6;
+} .headerMenuInput {
+    position: relative;
+} .headerMenuInput div {
+   position: absolute;
+   cursor: pointer;
+   right: 48px;
+   height: 20px;
+   top: calc(50% - 10px);
+   background-color: none;
+} .headerMenuInput input {
+    box-sizing: border-box;
+    margin: 0 32px;
+    width: 205px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 22px;
+} .headerLink {
+    display: flex;
+} .headerLink div {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    font-size: 18px;
+    line-height: 18px;
+} .headerLink div img {
+    margin-right: 8px;
+} .widget {
+    position: fixed;
+    top: 234px;
+    left: 64px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1E23;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: 8px 12px;
+} .widget path {
+    fill: #fff;
+} .widget div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+} .widget img {
+    fill: #fff;
+} .widget div:last-child {
+    margin-bottom: 0px;
+} .widgetActive {
+    background-color: #fff;
+} .widgetActive path {
+    fill: #292F36;
+} .welcome {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding: 64px 128px;
+} .welcome h1 {
+    font-size: 110px;
+    line-height: 110px;
+    text-align: center;
+    color: #98FAEC;
+} .welcomeContant {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 128px;
+} .welcomeLeft {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 37px 22px;
+    border-radius: 160px 0;
+    border: 4px solid #fff;
+    box-shadow: -5px -5px #12F7D6;
+    min-width: 310px;
+    width: 20%;
+} .welcomeLeftImg {
+    text-align: center;
+} .welcomeLeftImg span {
+    font-size: 14px;
+    line-height: 18px;    
+} .welcomeLeftLink {
+    margin-top: 32px;
+} .welcomeLeftLink div {
+    display: flex;
+    margin-bottom: 16px;
+} .welcomeLeftLink span {
+    margin-left: 16px;
+    font-size: 14px;
+    line-height: 18px;
+} .welcomeLeftSkills span {
+    background-color: #12F7D6;
+    padding: 0 8px;
+    border-radius: 8px;
+    color: #292F36;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 10px;
+} .welcomeLeftSkills span:last-child {
+    margin-right: 0px;
+} .welcomeLeftBtn {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 32px;
+    border-radius: 32px;
+    background-color: #fff;
+    color: #292F36;
+    width: 200px;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 20px;
+} .welcomeLeftBtn img {
+    margin-left: 16px;
+} .welcomeBlocks {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 44px;
+} .welcomeMiddle {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-right: 20px;
+} .tegs {
+    display: inline;
+    font-size: 14px;
+    line-height: 18px;
+    color: #98FAEC;
+} .welcomeMiddle h2 {
+    margin-bottom: 32px;
+    padding-left: 16px;
+} .welcomeMiddle h2 mark {
+    color: #12F7D6;
+    background-color: #ffffff00;
+} .welcomeMiddleAboutme {
+    margin: 16px 0;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 24px;
+} .welcomeMiddleBtn {
+    margin-top: 16px;
+    display: flex;
+    padding-left: 24px;
+} .welcomeMiddleBtn h4 {
+    color: #12F7D6;
+} .welcomeMiddleBtn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #43454D;
+    margin-left: 16px;
+} .welcomeMiddleBtn button img {
+    width: 24px;
+    height: 24px;
+} .welcomeRight {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    box-sizing: border-box;
+    margin-top: 27px;
+    padding: 48px 32px;
+    background-color: #1A1E23;
+    border-radius: 80px;
+    min-width: 235px;
+    width: 15%;
+} .welcomeRightBlock {
+    display: flex;
+    align-items: center;
+    width: 170px;
+}.welcomeRightBlock span:first-child {
+    margin-right: 30px;
+    font-size: 48px;
+    line-height: 62px;
+    color: #12F7D6;
+} .welcomeRightBlock span:last-child {
+    font-size: 16px;
+    line-height: 20px;
+} .aboutMe {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1920px;
+    background-color: #1A1E23;
+    padding: 128px;
+} .aboutMeLeft {
+    padding: 0 128px;
+} .aboutMeLeft h2 {
+    display: inline-block;
+    padding: 16px 40px;
+    margin-bottom: 64px;
+    background-color: #292F36;
+    border-radius: 40px 0;
+    border: 4px solid #12F7D6;
+} .aboutMeText {
+    background-color: #292F36;
+    border-radius: 40px;
+    padding: 24px 40px;
+} .aboutMeText h4 {
+    display: block;
+} .aboutMeTextContant {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 16px 0;
+}  .aboutMeTextContant p {
+    display: block;
+}.aboutMeText .tegs {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+} .aboutMeText mark {
+    background-color: #ffffff00;
+    color: #12F7D6;
+} .aboutMeRight {
+    padding-right: 64px;
+} .aboutMeRight img {
+    width: 100%;
+    border-radius: 20px;
+} .skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding: 128px;
+    text-align: center;
+} .header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+} .header h2 {
+    margin-bottom: 16px;
+    color: #12F7D6;
+} .headerBlock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .headerBlock .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #12F7D6;
+    border-radius: 50%;
+} .headerBlock .line {
+    width: 140px;
+    height: 2px;
+    background-color: #12F7D6;
+} .header span {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 20px;
+} .skillsPanelDots {
+    display: flex;
+    justify-content: space-between;
+    max-width: 920px;
+    width: 100%;
+} .skillsPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #98FAEC;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border-left: 8px solid #0C73B8;
+} .skillsPanel span {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 8px 0;
+    color: #292F36;
+} .skillsPanel p {
+    font-style: 16px;
+    line-height: 20px;
+    color: #43454D;
+} .skillSlider {
+    position: relative;
+    max-width: 960px;
+    width: 100%;
+    overflow-x: clip;
+} .skillSliders {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+} .skillSlide {
+    min-width: 100%;
+} .skillLanguages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+} .skillLanguagesBlockImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+} .html .skillLanguagesBlockImg {
+    background-color: #E54F26;
+} .css .skillLanguagesBlockImg {
+    background-color: #0C73B8;
+} .js .skillLanguagesBlockImg {
+    background-color: #E7A020;
+} .php .skillLanguagesBlockImg {
+    background-color: #7A4BDD;
+} .react .skillLanguagesBlockImg{
+    background-color: #28A9E0;
+} .bootstrap .skillLanguagesBlockImg{
+    background-color: #6528e0;
+} .phpQuery .skillLanguagesBlockImg {
+    background-color: #325da7 ;
+} .sass .skillLanguagesBlockImg {
+    background-color: rgb(191.25, 63.75, 127.5);
+} .openCard .skillLanguagesBlockImg {
+    background-color: #01afe8;
+} .git .skillLanguagesBlockImg {
+    background-color: #f14e32;
+} .mySQL .skillLanguagesBlockImg {
+    background-color: #e97b00;
+} .wp .skillLanguagesBlockImg {
+    background-color: rgb(56, 88, 233);
+} .skillLanguagesBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} .skillLanguagesBlock h4 {
+    margin-top: 24px;
+    text-transform: uppercase;
+} .html h4 {
+    color: #E54F26;
+} .css h4 {
+    color: #0C73B8;
+} .js h4 {
+    color: #E7A020;
+} .php h4 {
+    color: #7A4BDD;
+} .react h4 {
+    color: #28A9E0;
+} .bootstrap h4{
+    color: #6528e0;
+} .phpQuery h4 {
+    color: #325da7 ;
+} .sass h4 {
+    color: rgb(191.25, 63.75, 127.5);
+} .openCard h4 {
+    color: #01afe8;
+} .git h4 {
+    color: #f14e32;
+} .mySQL h4 {
+    color: #e97b00;
+} .wp h4 {
+    color: rgb(56, 88, 233);
+} .works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding: 128px;
+    text-align: center;
+    background-color: #1A1E23;
+} .worksSlider {
+    position: relative;
+    max-width: 920px;
+    width: 100%;
+    overflow-x: clip;
+} .worksSliders {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+} .worksSlide {
+    min-width: 100%;
+} .worksSlide img {
+    width: 100%;
+} .sliderArrow {
+    position: absolute;
+    top: calc(50% - 36px);
+    width: 72px;
+    height: 72px;
+    background-color: #292F36;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .sliderArrowPrev {
+    transform: rotate(180deg);
+    cursor: pointer;
+} .sliderArrowNext {
+    right: 50px;
+    cursor: pointer;
+} .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding: 128px 400px;
+    text-align: center;
+} .contactContant {
+    width: 100%;
+} .contactContant h4 {
+    display: inline-block;
+    color: #12F7D6;
+    padding: 16px 40px;
+    border-radius: 32px 0;
+    border: 2px solid #12F7D6;
+    margin-bottom: 64px;
+} .contactContantBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+} .contactContantBlock label {
+    width: calc(50% - 64px);
+} .contactContant form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color:#12F7D6;
+    font-size: 20px;
+    line-height: 24px;
+} .contactContant form input {
+    padding: 8px 0;
+    margin-top: 24px;
+    width: 100%;
+    background-color: #ffffff00;
+    border-bottom: 1px solid #98FAEC;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+} .contactContantBtn {
+    display: flex;
+    justify-content: center;
+} .contactContantBtn button {
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    background-color:#12F7D6;
+    color: #292F36;
+    font-size: 24px;
+    line-height: 28px;
+} .contactContantBtn button img {
+    margin-left: 16px;
+} .allWorksHeader {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding: 128px 128px 64px;
+    text-align: center;
+} .worksContant {
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding: 64px 128px;
+    padding-top: 0;
+    margin: 0 auto;
+} .worksBlock{
+    display: flex;
+    align-items: center;
+    padding: 64px 14px;
+    gap: 64px;
+    border-bottom: 1px solid #43454D;
+} .worksBlockImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 20px;
+    min-width: 240px;
+    padding: 20px;
+    width: 240px;
+    height: 240px;
+} .SRO {
+    background-color: #D50505;
+} .BestSound {
+    padding-left: 40px;
+    background: linear-gradient(rgba(80, 20, 20), rgba(0, 0, 0));
+} .worksBlock:first-child{
+    border-top: 1px solid #43454D;
+} .worksBlock h4{
+    color: #12F7D6;
+} .worksBlock img {
+    width: 100%;
+    height: 100%;
+} .worksBlockText {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+} .worksBlockTextMore {
+    color: #12F7D6;
+    text-decoration: underline;
+} .worksBlockTools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+} .worksBlockTools div{
+    background-color: #43454D;
+    padding: 5px 20px;
+    color: #fff;
+    border-radius: 16px;
+} footer {
+    background-color: #1A1E23;
+} .footerContant {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding: 16px 128px;
+    font-size: 16px;
+    line-height: 18px;
+} .footerContantBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+} .footerContantSubtext {
+    width: 35%;
+} .footerContantLink a {
+    margin-right: 32px;
+} .footerContantLink a:last-child {
+    margin-right: 0px;
+} .footerContantDesign a {
+    color: #12F7D6;
+    text-decoration: underline;
+}
+@media(max-width: 1920px) {
+    .welcomeContant {
+        padding: 64px 0;
+    } .widget {
+        left: 32px;
+    } .aboutMeLeft {
+        padding-left: 0;
+    } .aboutMeRight {
+        padding: 0;
+    }
+}
+@media(max-width: 1440px) {
+    header {
+        padding: 0 96px;
+    }.headerContant {
+        padding: 32px 0;
+    } .headerMenuInput input {
+        display: none;
+    } .headerMenuInput div {
+        position: static;
+    } .headerMenuInputImg {
+        fill: #fff;
+    } .headerLink div img {
+        margin: 0;
+    } .headerLink div span {
+        display: none;
+    } .welcomeContant {
+        flex-direction: column;
+        align-items: center;
+    } .welcomeBlocks {
+        margin-top: 64px;
+        width: 100%;
+    } .aboutMe {
+        flex-direction: column;
+    } .aboutMeLeft {
+        padding: 0;
+        margin-bottom: 128px;
+    } .skillsPanelDots {
+        flex-direction: column;
+        gap: 20px;
+    }.skillLanguages {
+        flex-wrap: wrap;
+        gap: 20px;
+    } .skillLanguagesBlock  {
+        width: calc(50% - 10px);
+    } .contact {
+        padding: 64px 128px;
+    } .worksContant {
+        padding: 32px 64px;
+        padding-top: 0;
+    } .worksBlock {
+        padding: 32px 14px;
+    } .footerContant {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 16px 64px;
+    } .footerContantSubtext, .footerContantBlock {
+        width: 100%;
+        text-align: center;
+    }
+}
+ @media(max-width: 880px) {
+    header {
+        padding: 0 32px;
+    }.headerContant {
+        padding: 24px 0;
+    } header h3 {
+        font-size: 22px;
+        line-height: 30px;
+    } .headerMenu a {
+        margin-right: 24px;
+        font-size: 16px;
+        line-height: 20px;
+    } .headerLink div {
+        margin-left: 24px;
+    } .widget {
+        display: none;
+    } .welcome {
+        padding: 64px;
+    } .welcome h1 {
+        display: none;
+    } .welcomeContant {
+        padding: 0;
+    } .welcomeBlocks {
+        flex-direction: column;
+        align-items: center;
+    } .welcomeMiddle {
+        width: 100%;
+        margin: 0;
+    } .welcomeRight {
+        margin-top: 64px;
+    } .aboutMe {
+        padding: 64px;
+    } .aboutMeLeft {
+        margin-bottom: 64px;
+    } .skills {
+        padding: 64px;
+    } .skillLanguagesBlock h4 {
+        font-size: 26px;
+        line-height: 36px;
+    } .works {
+        padding: 64px;
+    } .worksContant {
+        padding: 32px;
+        padding-top: 0;
+    } .worksBlock {
+        align-items: flex-start;
+        gap: 32px;
+    } .worksBlockImg {
+        min-width: 120px;
+        width: 120px;
+        height: 120px;
+    } .worksBlockText {
+        gap: 12px;
+    } .worksBlockTools {
+        gap: 12px;
+    } .contact {
+        padding: 32px 24px 64px;
+    }
+}
+@media(max-width: 640px) {
+    header {
+        padding: 0 24px;
+    } header h3 {
+        font-size: 16px;
+        line-height: 20px;
+    } .headerMenu a {
+        margin-right: 16px;
+    } .headerLink {
+        display: none;
+    } .welcome {
+        padding: 64px 24px;
+    } .aboutMe {
+        padding: 64px 24px;
+    } .aboutMeLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } .aboutMeLeft h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }.skills {
+        padding: 64px 24px;
+    } .skillLanguagesBlockImg {
+        width: 112px;
+        height: 112px;
+    } .works {
+        padding: 64px 24px;
+    } .worksContant {
+        padding: 24px;
+        padding-top: 0;
+    } .worksBlock {
+        flex-direction: column;
+    } .worksBlockImg {
+        margin: 0 auto;
+    }
+}
