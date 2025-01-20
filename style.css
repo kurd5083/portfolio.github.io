@@ -595,7 +595,9 @@ p {
 } .BestSound {
     padding-left: 40px;
     background: linear-gradient(rgba(80, 20, 20), rgba(0, 0, 0));
-} .worksBlock:first-child{
+} .Noemi {
+    background-color: #4a4a4a;
+}.worksBlock:first-child{
     border-top: 1px solid #43454D;
 } .worksBlock h4{
     color: #12F7D6;
@@ -612,7 +614,7 @@ p {
 } .worksBlockTools {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 15px;
 } .worksBlockTools div{
     background-color: #43454D;
     padding: 5px 20px;
@@ -623,19 +625,13 @@ p {
 } .footerContant {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
     box-sizing: border-box;
     max-width: 1920px;
     padding: 16px 128px;
     font-size: 16px;
     line-height: 18px;
-} .footerContantBlock {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 65%;
-} .footerContantSubtext {
-    width: 35%;
 } .footerContantLink a {
     margin-right: 32px;
 } .footerContantLink a:last-child {
@@ -700,9 +696,6 @@ p {
         flex-direction: column-reverse;
         gap: 20px;
         padding: 16px 64px;
-    } .footerContantSubtext, .footerContantBlock {
-        width: 100%;
-        text-align: center;
     }
 }
  @media(max-width: 880px) {
@@ -764,7 +757,7 @@ p {
     } .worksBlockText {
         gap: 12px;
     } .worksBlockTools {
-        gap: 12px;
+        gap: 8px;
     } .contact {
         padding: 32px 24px 64px;
     }
